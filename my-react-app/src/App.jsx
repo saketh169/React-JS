@@ -20,10 +20,9 @@ const App = () => (
   <DigitalClock/>
   <DigitalClock/>
   <Stopwatch/>
-
-
   </>
-  */
+  
+ */
 
    <FreshMart/>
   
