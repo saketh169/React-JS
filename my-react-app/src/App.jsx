@@ -1,3 +1,5 @@
+
+/*
 import { Provider } from 'react-redux';
 //import { store } from './app/store.js';
 import AddTodo from './components/AddTodo.jsx';
@@ -24,7 +26,7 @@ const App = () => (
   
  */
 
-   <FreshMart/>
+  // <FreshMart/>
   
 
   /*
@@ -36,7 +38,29 @@ const App = () => (
       <Todos />
     </div>
   </Provider>
-  */
+  
+
 );
+  */
+
+ 
+import React from 'react';
+import { Provider } from 'react-redux';
+import { store } from './app/store';
+import AddTodo from './components/AddTodo';
+import Todos from './components/Todos';
+
+function App() {
+  return (
+    <Provider store={store}>
+      <div className="p-4">
+        <AddTodo />
+        <Todos />
+      </div>
+    </Provider>
+  );
+}
 
 export default App;
+
+4
