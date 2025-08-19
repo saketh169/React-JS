@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic AJAX Example</title>
+    <script>
+        function loadData() {
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'https://jsonplaceholder.typicode.com/posts/1', true);
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    document.getElementById('result').innerText = xhr.responseText;
+                }
+            };
+            xhr.send();
+        }
+    </script>
+</head>
+<body>
+    <h2>Basic AJAX Example</h2>
+    <button onclick="loadData()">Load Data</button>
+    <pre id="result"></pre>
+</body>
+</html>
+
+<!--
+This file utilizes AJAX (Asynchronous JavaScript and XML) to perform asynchronous HTTP requests without reloading the page. 
+The AJAX calls are used to send data to the server and receive responses dynamically. Typically, jQuery's $.ajax(), $.get(), or $.post() methods are employed to initiate these requests. The success and error callbacks handle the server's response, updating the DOM or displaying messages as needed. AJAX is primarily used here to enhance user experience by providing real-time updates and seamless interactions.
+-->
+
