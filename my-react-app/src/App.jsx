@@ -1,4 +1,3 @@
-
 /*
 import { Provider } from 'react-redux';
 //import { store } from './app/store.js';
@@ -26,10 +25,9 @@ const App = () => (
   
  */
 
-  // <FreshMart/>
-  
+// <FreshMart/>
 
-  /*
+/*
   <Provider store={store}>
     <div className="app">
       <h1> My ToDo Application </h1>
@@ -43,12 +41,11 @@ const App = () => (
 );
   */
 
- 
-import React from 'react';
+/* import React from 'react';
 import { Provider } from 'react-redux';
 import { store } from './app/store';
 import AddTodo from './components/AddTodo';
-import Todos from './components/Todos';
+import Todos from './components/Todos'; 
 
 function App() {
   return (
@@ -58,9 +55,19 @@ function App() {
         <Todos />
       </div>
     </Provider>
+      
   );
+} */
+
+import Greet from './Greet'
+import React from 'react'
+
+function App () {
+  return (
+    <>
+      <Greet />
+    </>
+  )
 }
 
-export default App;
-
-4
+export default App
