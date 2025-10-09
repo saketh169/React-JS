@@ -12,7 +12,9 @@ const movies = [
   { id: 2, title: 'The Matrix' },
   { id: 3, title: 'Interstellar' },
   { id: 4, title: 'The Dark Knight' },
-  { id: 5, title: 'Pulp Fiction' }
+  { id: 5, title: 'Pulp Fiction' },
+   { id: 6, title: 'Spider Man' },
+   { id: 7, title: 'Invisible man' }
 ];
 
 // Backend routes
