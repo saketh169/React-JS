@@ -8,9 +8,8 @@ const counterSlice = createSlice({
   initialState: { count: 0 },
   reducers: {
     increment: state => { state.count += 1; },
-    // ADDED: Decrement action to decrease counter
+
     decrement: state => { state.count -= 1; },
-    // ADDED: Reset action to set counter back to 0
     reset: state => { state.count = 0; },
   },
 });
@@ -31,7 +30,6 @@ const ChildB = React.memo(() => {
       <button onClick={() => dispatch(counterSlice.actions.increment())}>
         Increment
       </button>
-      {/* ADDED: Decrement button */}
       <button onClick={() => dispatch(counterSlice.actions.decrement())}>
         Decrement
       </button>
@@ -39,12 +37,10 @@ const ChildB = React.memo(() => {
   );
 });
 
-// ADDED: Main component with timer and background color logic (must be inside Provider)
 const MainContent = () => {
   const count = useSelector(state => state.counter.count);
   const dispatch = useDispatch();
 
-  // ADDED: Auto-reset timer - resets counter to 0 after 10 seconds of inactivity
   React.useEffect(() => {
     const timer = setTimeout(() => {
       dispatch(counterSlice.actions.reset());
@@ -53,11 +49,10 @@ const MainContent = () => {
     return () => clearTimeout(timer);
   }, [count, dispatch]);
 
-  // ADDED: Dynamic background color based on counter value
   const backgroundColor = count > 0 ? 'lightgreen' : 'lightcoral';
 
   return (
-    <div style={{ backgroundColor, minHeight: '100vh' }}>
+    <div style={{ backgroundColor }}>
       <h2>Redux Toolkit Demo</h2>
       <ChildA />
       <ChildB />
