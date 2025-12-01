@@ -1,0 +1,15 @@
+// TODO APPLICATION FOLDER STRUCTURE
+
+src/
+├── app/
+│   └── store.js
+├── components/
+│   ├── AddTodo.jsx
+│   ├── AddTodo.module.css
+│   ├── Todos.jsx
+│   └── Todos.module.css
+├── features/
+│   └── todo/
+│       └── todoSlice.jsx
+├── App.jsx
+└── main.jsx

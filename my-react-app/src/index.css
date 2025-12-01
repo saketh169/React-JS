@@ -1,0 +1,82 @@
+/*
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  color-scheme: dark;
+  color: #f3f3f3;
+  background-color: #6c7280;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #535bf2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: inherit;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.5em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #646cff;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(100,108,255,0.06);
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+}
+button:hover {
+  background: #535bf2;
+  border-color: #535bf2;
+}
+button:focus,
+button:focus-visible {
+  outline: 3px solid #646cff44;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  font-family: inherit;
+  background: #23242a;
+  color: #f3f3f3;
+  transition: border 0.2s, box-shadow 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border: 1.5px solid #646cff;
+  box-shadow: 0 2px 8px rgba(100,108,255,0.08);
+  outline: none;
+}
+input[type="text"]::placeholder {
+  color: #b0b3bb;
+  opacity: 1;
+}
+
+*/

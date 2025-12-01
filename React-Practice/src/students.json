@@ -1,0 +1,16 @@
+[
+  {
+    "name": "Saketh",
+    "age": 20,
+    "gender": "male",
+    "email": "saketh123@gmail.com",
+    "password": "1234"
+  },
+  {
+    "name": "Alice",
+    "age": 22,
+    "gender": "female",
+    "email": "alice@example.com",
+    "password": "abcd"
+  }
+]
